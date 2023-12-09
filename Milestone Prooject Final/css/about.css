@@ -1,0 +1,72 @@
+
+/* section about me */
+.sec-about {
+    height: 50%;
+    width: 100%;
+    padding-top: 10%;
+    padding-bottom: 0%;
+    text-align: center;
+    background-color: #dfdfdf
+}
+.sec-about h4 {
+    padding: 1%;
+}
+.sec-about p.para2 {
+    padding: 1%;
+}
+.sec-about p.para3 {
+    padding: 1% 20% 10% 20%;
+}
+.sec-about img {
+    width: 100%;
+    height: 700px;
+    padding-bottom: 0;
+}
+
+
+/* section tools used */
+.sec-tools {
+    height: 40%;
+    width: 100%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    text-align: center;
+    background-color: #cfc5c3
+}
+
+.sec-tools h5 {
+    padding: 3% 0 1% 0;
+}
+.sec-tools p .para2 {
+    padding: 1% 0 3% 0;
+}
+
+    /* columns */
+    /* creates 3 equal columns that floats next to each other */
+.column {           
+    float: left;
+    width: 33.33%;
+    padding: 5%;
+}
+    /* clears floats after the columns */
+.row::after {       
+    content: "";
+    display: table;
+    clear: both;
+}
+    /* responsive - makes all columns stack on top of each other */
+@media screen and (max-width: 640px) {
+    .column {
+        width: 100%;
+    }
+}
+
+.tools-used .column img {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+.tools-used .column h6 {
+    text-transform: uppercase;
+    padding: 8%;
+}

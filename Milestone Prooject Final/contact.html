@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <title>Lovely Little Crafts</title>
+</head>
+<body>
+    <header>
+        <div class="logo-name">
+            <a href="index.html"><img src="images/logo.png" alt="logo" class="logo"></a>
+            <h4>Novie Janine Rubio</h4>
+        </div>
+
+        <hr>
+        <div class="nav-icons">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                   
+                            <li class="dropdown"><a href="gallery.html">Gallery</a>
+                                <ul class="dropdown-content">
+                                    <li><a href="gallery_artworks/digital.html">Digital</a></li>
+                                    <li><a href="gallery_artworks/portraits.html">Portraits</a></li>
+                                    <li><a href="gallery_artworks/doodles.html">Doodles</a></li>
+                                    <li><a href="gallery_artworks/anime.html">Anime</a></li>
+                                </ul>
+                            </li>
+                    
+                    <li><a href="contact.html" class="current-page">Contact</a></li>                
+                </ul>                
+            </nav>
+    
+            <div class="icons">
+                <a href="https://www.instagram.com/novnov_r/"><img src="images/icons/icons8-insta.svg" alt="instagram"></a>
+                <a href="https://www.linkedin.com/in/novie-rubio-0178972a2"><img src="images/icons/icons8-linkedin.svg" alt="linkedin"></a>
+                <a href="https://github.com/NovieJTR"><img src="images/icons/icons8-github.svg" alt="github"></a>    
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="contact">
+            <h4>contact</h4>
+            <div class="contact-icons">
+                <div class="column">
+                    <img src="images/icons/icons8-phone-100.png" alt="Phone Icon">
+                    <p class="para1">561-481-3967</p>
+                </div>
+                <div class="column">
+                    <img src="images/icons/icons8-mail.svg" alt="Email Icon">
+                    <p class="para1">novierubio2004@gmail.com</p>
+                </div>
+                <div class="column">
+                    <img src="images/icons/icons8-location-100.png" alt="Location Icon">
+                    <p class="para1">Florida, United States</p>
+                </div>
+            </div>
+            <h5>Ask Me Any Questions!</h5>
+        </section>
+
+
+        <form name="studentForm" method="post" action="https://professorcooke.org/forms/processform.php">
+            <fieldset>
+                <!--general information-->
+                <div class="format">
+                    <label for="firstName" id="label-firstName">First Name*</label><br>
+                    <input type="text" name="firstName" id="firstName" minlength="3" autocomplete="on" required autofocus placeholder="Enter your first name">
+                </div>
+                <br>
+                <div class="format">
+                    <label for="lastName">Last Name*</label><br>
+                    <input type="text" name="lastName" id="lastName" minlength="3" autocomplete="on" required placeholder="Enter your last name">
+                </div>
+                <br>    
+                <div class="format">
+                    <label for="email">Email*</label><br>                                   
+                    <input type="email" name="email" id="email" autocomplete="on" required placeholder="Enter your email">
+                </div>
+                <br>
+                <div class="textArea">
+                    <label for="comments">Leave a message!</label><br>
+                    <textarea name="comments" id="comments" placeholder="Type your message here..."></textarea>
+                </div>
+                <input type="submit" value="submit">
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <h6>Lovely Little Crafts</h6>
+        <p class="para3"><a href="mailto:novierubio2004@gmail.com"></a>novierubio2004@gmail.com</p>
+        <div class="icons">
+            <a href="https://www.instagram.com/novnov_r/"><img src="images/icons/icons8-insta.svg" alt="instagram"></a>
+            <a href="https://www.linkedin.com/in/novie-rubio-0178972a2"><img src="images/icons/icons8-linkedin.svg" alt="linkedin"></a>
+            <a href="https://github.com/NovieJTR"><img src="images/icons/icons8-github.svg" alt="github"></a>
+        </div>
+        <p class="para3">&copy;2023 by Novie Janine Rubio</p>
+    </footer>
+</body>
+</html>

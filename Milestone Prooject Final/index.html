@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/home.css">
+    <title>Lovely Little Crafts</title>
+</head>
+<body>
+    <header>
+        <div class="logo-name">
+            <a href="index.html"><img src="images/logo.png" alt="logo" class="logo"></a>
+            <h4>Novie Janine Rubio</h4>
+        </div>
+
+        <hr>
+        <div class="nav-icons">
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="current-page">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                   
+                        
+                            <li class="dropdown"><a href="gallery.html">Gallery</a>
+                                <ul class="dropdown-content">
+                                    <li><a href="gallery_artworks/digital.html">Digital</a></li>
+                                    <li><a href="gallery_artworks/portraits.html">Portraits</a></li>
+                                    <li><a href="gallery_artworks/doodles.html">Doodles</a></li>
+                                    <li><a href="gallery_artworks/anime.html">Anime</a></li>
+                                </ul>
+                            </li>
+                        
+                    
+                    <li><a href="contact.html">Contact</a></li>                
+                </ul>                
+            </nav>
+    
+            <div class="icons">
+                <a href="https://www.instagram.com/novnov_r/"><img src="images/icons/icons8-insta.svg" alt="instagram"></a>
+                <a href="https://www.linkedin.com/in/novie-rubio-0178972a2"><img src="images/icons/icons8-linkedin.svg" alt="linkedin"></a>
+                <a href="https://github.com/NovieJTR"><img src="images/icons/icons8-github.svg" alt="github"></a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!-- first section -->
+        <section class="sec1">
+            <h2>Lovely Little Crafts</h2>
+            <p class="para1">Childhood Artworks</p>
+                <!-- slideshow -->
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <img src="images/cover_bg/1_paintings_gallery.webp" alt="Paintings in Gallery">
+                </div>
+                <div class="mySlides fade">
+                    <img src="images/cover_bg/2_people_art.webp" alt="People Watching Art">
+                </div>
+                <div class="mySlides fade">
+                    <img src="images/cover_bg/3_art_gallery.webp" alt="Art Gallery">
+                </div>
+                <div class="mySlides fade">
+                    <img src="images/cover_bg/4_flags.png" alt="Flags">
+                </div>
+                <div class="mySlides fade">
+                    <img src="images/cover_bg/5_art_dealer.webp" alt="cArt Dealer">
+                </div>
+                <div class="mySlides fade">
+                    <img src="images/cover_bg/6_girl_art.png" alt="Girl Looking at Art">
+                </div>
+                <div class="mySlides fade">
+                    <img src="images/cover_bg/7_walking_gallery.webp" alt="cover slide">
+                </div>
+    
+                <div class="slide-dots">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>    
+            <script> // script for dots animation with slideshow
+            let slideIndex = 0;
+            showSlides();
+    
+                function showSlides() {
+                let i;
+                let slides = document.getElementsByClassName("mySlides");
+                let dots = document.getElementsByClassName("dot");
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) {slideIndex = 1}    
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "block";  
+                dots[slideIndex-1].className += " active";
+                setTimeout(showSlides, 2000);
+                }
+            </script>
+        </section>
+
+        <!-- second section-->
+        <section class="sec2">
+            <img src="images/cover_bg/4_flags.png" alt="Flags">
+            <h6>Quote</h6>
+            <p class="para2">Pablo Picasso</p>
+            <blockquote class="para2"><i>"Inspiration does exist but it must find you working."</i></blockquote>
+        </section>
+
+        <!-- third section-->
+        <section class="sec3">
+            <img src="images/self-portrait_edited.jpg" alt="Novie Janine Rubio">
+            <h5>Creator</h5>
+            <h6>Novie Janine Rubio</h6>
+            <p class="para2">Artist &VerticalSeparator; Web Developer</p>
+        </section>
+
+        <!-- fourth section -->
+        <section class="sec4">
+            <div class="float-left">
+                <img src="images/cover_bg/6_girl_art.png" alt="Girl Looking at Art">
+            </div>
+            <div class="float-right">
+                <h4>Pure Imagination</h4>
+                <p class="para2">Childhood Art Momento</p>
+                <p class="para3">Step into this online art sanctuary, a heartfelt homage to the uninhibited creativity of childhood. Explore a curated collection of whimsical artworks, each a vibrant testament to the boundless imagination of youth. Rediscover the joy and nostalgia of your own childhood through these evocative pieces, inviting you to embrace the beauty of innocence and untamed creativity.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <h6>Lovely Little Crafts</h6>
+        <p class="para3"><a href="mailto:novierubio2004@gmail.com"></a>novierubio2004@gmail.com</p>
+        <div class="icons">
+            <a href="https://www.instagram.com/novnov_r/"><img src="images/icons/icons8-insta.svg" alt="instagram"></a>
+            <a href="https://www.linkedin.com/in/novie-rubio-0178972a2"><img src="images/icons/icons8-linkedin.svg" alt="linkedin"></a>
+            <a href="https://github.com/NovieJTR"><img src="images/icons/icons8-github.svg" alt="github"></a>
+        </div>
+        <p class="para3">&copy;2023 by Novie Janine Rubio</p>
+    </footer>
+</body>
+</html>
